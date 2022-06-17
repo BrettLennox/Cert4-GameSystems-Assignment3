@@ -7,6 +7,9 @@ using UnityEngine.Audio;
 
 public class MenuHandler : MonoBehaviour
 {
+    public static int fileToLoad;
+    public static bool shouldLoad = false;
+
     public AudioMixer masterAudio;
     public string currentSlider;
 
@@ -51,9 +54,20 @@ public class MenuHandler : MonoBehaviour
         currentSlider = sliderName;
     }
 
+    [SerializeField] private Slider masterSlider;
+    [SerializeField] private Slider musicSlider;
+    [SerializeField] private Slider sfxSlider;
+
     public void ChangeVolume(float volume)
     {
         masterAudio.SetFloat(currentSlider, volume);
+        PlayerPrefs.SetFloat(currentSlider, volume);
+    }
+
+    public void LoadFileAcrossScene(int index)
+    {
+        shouldLoad = true;
+        fileToLoad = index;
     }
 
     public void ChangeScene(int sceneNumber)
@@ -76,6 +90,14 @@ public class MenuHandler : MonoBehaviour
 
     public void Start()
     {
+        if (shouldLoad)
+        {
+            GetComponent<SaveHandler>().LoadGame(fileToLoad);
+            shouldLoad = false;
+        }
+
+        int resolution = PlayerPrefs.GetInt("resolution");
+
         resolutions = Screen.resolutions;
         resDropDown.ClearOptions();
         List<string> options = new List<string>();
@@ -98,10 +120,15 @@ public class MenuHandler : MonoBehaviour
     {
         Resolution res = resolutions[resolutionIndex];
         Screen.SetResolution(res.width, res.height, Screen.fullScreen);
+        PlayerPrefs.SetInt("resolution", resolutionIndex);
     }
 
     public void Quit()
     {
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#endif
         Application.Quit();
+
     }
 }

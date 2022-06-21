@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1595,6 +1595,34 @@ PrefabInstance:
       propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3962488172163867220, guid: 3c1248617bd0fa949b831e6f3b476471, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962488172163867220, guid: 3c1248617bd0fa949b831e6f3b476471, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1653899755}
+    - target: {fileID: 3962488172163867220, guid: 3c1248617bd0fa949b831e6f3b476471, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1653899755}
+    - target: {fileID: 3962488172163867220, guid: 3c1248617bd0fa949b831e6f3b476471, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1653899755}
+    - target: {fileID: 3962488172163867220, guid: 3c1248617bd0fa949b831e6f3b476471, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CurrentSlider
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962488172163867220, guid: 3c1248617bd0fa949b831e6f3b476471, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: GetSlider
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962488172163867220, guid: 3c1248617bd0fa949b831e6f3b476471, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: Toggle
+      objectReference: {fileID: 0}
     - target: {fileID: 3962488172227679408, guid: 3c1248617bd0fa949b831e6f3b476471, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -1647,6 +1675,22 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3962488173140725983, guid: 3c1248617bd0fa949b831e6f3b476471, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1653899755}
+    - target: {fileID: 3962488173140725983, guid: 3c1248617bd0fa949b831e6f3b476471, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1653899755}
+    - target: {fileID: 3962488173140725983, guid: 3c1248617bd0fa949b831e6f3b476471, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CurrentSlider
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962488173140725983, guid: 3c1248617bd0fa949b831e6f3b476471, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: ChangeVolume
+      objectReference: {fileID: 0}
     - target: {fileID: 3962488173205814261, guid: 3c1248617bd0fa949b831e6f3b476471, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1670,6 +1714,26 @@ PrefabInstance:
     - target: {fileID: 3962488173488052468, guid: 3c1248617bd0fa949b831e6f3b476471, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962488173551390877, guid: 3c1248617bd0fa949b831e6f3b476471, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962488173551390877, guid: 3c1248617bd0fa949b831e6f3b476471, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1653899755}
+    - target: {fileID: 3962488173551390877, guid: 3c1248617bd0fa949b831e6f3b476471, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1653899755}
+    - target: {fileID: 3962488173551390877, guid: 3c1248617bd0fa949b831e6f3b476471, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CurrentSlider
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962488173551390877, guid: 3c1248617bd0fa949b831e6f3b476471, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: ChangeVolume
       objectReference: {fileID: 0}
     - target: {fileID: 3962488173556677407, guid: 3c1248617bd0fa949b831e6f3b476471, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -1726,6 +1790,22 @@ PrefabInstance:
     - target: {fileID: 3962488173556677407, guid: 3c1248617bd0fa949b831e6f3b476471, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962488173589368396, guid: 3c1248617bd0fa949b831e6f3b476471, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1653899755}
+    - target: {fileID: 3962488173589368396, guid: 3c1248617bd0fa949b831e6f3b476471, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1653899755}
+    - target: {fileID: 3962488173589368396, guid: 3c1248617bd0fa949b831e6f3b476471, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CurrentSlider
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962488173589368396, guid: 3c1248617bd0fa949b831e6f3b476471, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: ChangeVolume
       objectReference: {fileID: 0}
     - target: {fileID: 3962488173603446896, guid: 3c1248617bd0fa949b831e6f3b476471, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1856,6 +1936,39 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1492350067 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3962488172163867220, guid: 3c1248617bd0fa949b831e6f3b476471, type: 3}
+  m_PrefabInstance: {fileID: 1492350057}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9085046f02f69544eb97fd06b6048fe2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1492350068 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3962488173338641060, guid: 3c1248617bd0fa949b831e6f3b476471, type: 3}
+  m_PrefabInstance: {fileID: 1492350057}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9085046f02f69544eb97fd06b6048fe2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1492350069 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3962488171972525212, guid: 3c1248617bd0fa949b831e6f3b476471, type: 3}
+  m_PrefabInstance: {fileID: 1492350057}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d0b652f32a2cc243917e4028fa0f046, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1496601701
@@ -2413,10 +2526,13 @@ MonoBehaviour:
     slider: {fileID: 0}
     volume: 0
     isMute: 0
-  masterSlider: {fileID: 1492350062}
-  musicSlider: {fileID: 1492350061}
-  sfxSlider: {fileID: 1492350060}
   resDropDown: {fileID: 1492350059}
+  qualityDropdown: {fileID: 1492350069}
+  fullscreenToggle: {fileID: 1492350068}
+  sliderMasterVolume: {fileID: 1492350062}
+  sliderMusicVolume: {fileID: 1492350061}
+  sliderSFXVolume: {fileID: 1492350060}
+  muteMaster: {fileID: 1492350067}
 --- !u!4 &1653899756
 Transform:
   m_ObjectHideFlags: 0

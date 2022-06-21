@@ -10,7 +10,7 @@ public class SaveHandler : MonoBehaviour
     string path0 = "Assets/Resources/Save/CharacterPosition0.txt";
     string path1 = "Assets/Resources/Save/CharacterPosition1.txt";
 
-    public void SaveGame(int index)
+    public void SaveGame(int index) // saves to the file depending on the passed in index
     {
         string myPath = index == 0 ? path0 : path1;
         StreamWriter writer = new StreamWriter(myPath, false);
@@ -24,12 +24,7 @@ public class SaveHandler : MonoBehaviour
 #endif
     }
 
-    public void NewGame()
-    {
-
-    }
-
-    public void LoadGame(int index)
+    public void LoadGame(int index) // loads a file based on the passed in index
     {
         string myPath = index == 0 ? path0 : path1;
         StreamReader reader = new StreamReader(myPath);
@@ -53,7 +48,7 @@ public class SaveHandler : MonoBehaviour
         reader.Close();
     }
 
-    public Vector3 ProcessPositions(string[] name)
+    public Vector3 ProcessPositions(string[] name) //splits the line of data in the txt file so the data can be used according to its line
     {
         name[1] = name[1].Replace("(", "");
         name[1] = name[1].Replace(")", "");
@@ -68,7 +63,7 @@ public class SaveHandler : MonoBehaviour
     }
 
 
-    public Quaternion ProcessQuaternion(string[] name)
+    public Quaternion ProcessQuaternion(string[] name) //splits the line of data in the txt file so the data can be used according to its line
     {
         name[1] = name[1].Replace("(", "");
         name[1] = name[1].Replace(")", "");

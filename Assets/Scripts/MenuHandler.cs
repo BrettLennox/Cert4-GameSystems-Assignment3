@@ -84,6 +84,13 @@ public class MenuHandler : MonoBehaviour
     }
     #endregion
     #region Quality and Resolution
+    public Resolution[] resolutions;
+    public Dropdown resDropDown;
+    [SerializeField] Dropdown qualityDropdown;
+    [SerializeField] Toggle fullscreenToggle;
+    public static int tempQuality, tempResolution;
+    public static bool tempFullscreen;
+
     public void Quality(int qualityIndex) //adjusts quality to match the passed in quality index
     {
         QualitySettings.SetQualityLevel(qualityIndex);
@@ -99,13 +106,6 @@ public class MenuHandler : MonoBehaviour
         PlayerPrefs.SetInt("fullscreen", value);
         tempFullscreen = PlayerPrefs.GetInt("fullscreen") == 0 ? false : true;
     }
-
-    public Resolution[] resolutions;
-    public Dropdown resDropDown;
-    [SerializeField] Dropdown qualityDropdown;
-    [SerializeField] Toggle fullscreenToggle;
-    public static int tempQuality, tempResolution;
-    public static bool tempFullscreen;
 
     void LoadResolution() // loads resolution related data
     {
